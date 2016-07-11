@@ -1,0 +1,573 @@
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import "http://fonts.googleapis.com/css?family=Raleway:400,700";
+
+/**Custom Css **/
+
+
+
+/**Default Font and Style for webpages**/
+
+
+body {
+  background: #fff;
+  margin: 0;
+  width: 100%;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+body, input, select, textarea {
+		color: #666;
+		font-family: "Raleway", Arial, Helvetica, sans-serif;
+		font-size: 13pt;
+		font-weight: 400;
+		/*line-height: 2em;*/
+	}
+
+	a {
+		color: #f32853;
+		text-decoration: underline;
+	}
+
+		a:hover {
+			text-decoration: none;
+		}
+
+	strong, b {
+		color: #484848;
+		font-weight: 700;
+	}
+
+	em, i {
+		font-style: italic;
+	}
+
+	p {
+		margin: 0 0 2em 0;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		color: #484848;
+		font-weight: 700;
+		line-height: 1em;
+		margin: 0 0 1em 0;
+		text-transform: uppercase;
+	}
+
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+	h2 {
+		font-size: 1.75em;
+		/*line-height: 1.5em;*/
+	}
+
+	h3 {
+		font-size: 1.35em;
+		/*line-height: 1.5em;*/
+	}
+
+	h4 {
+		font-size: 1.1em;
+		/*line-height: 1.5em;*/
+	}
+
+	h5 {
+		font-size: 0.9em;
+		/*line-height: 1.5em;*/
+	}
+
+	h6 {
+		font-size: 0.7em;
+		/*line-height: 1.5em;*/
+	}
+
+/**Navigation Bar**/
+
+/**On homepage **/
+
+  #fname {
+    
+        font-weight: 100;
+    }
+
+  nav {
+    border: solid 1px rgba(144, 144, 144, 0.25);
+    overflow: hidden;
+    background-color: rgba(255,255,255,1);
+    top: 0;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    z-index: 100;
+    -webkit-box-shadow:0px 0px 1px rgba(44,44,44,.3);
+  }
+
+  nav h2 {
+     display: inline-block;
+     padding-top: 23px;
+     padding-left: 10px;
+     font-size: 1em;
+  }
+
+
+  nav ul {
+    list-style-type: none;
+    /*
+    margin: 0;*/
+    display: inline-block;
+    float: right;  
+
+  }
+  
+  nav li {
+    display: inline-block;
+    padding: 3px 16px;  
+     
+  }
+
+nav a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/*Banner*/
+
+#banner {
+    height: 750px;
+    text-align: center;
+    color: white;
+    
+}
+.picpanel {
+    width: 100%;
+    z-index: 1;
+    background: url("/images/photo1.jpg") no-repeat 0 0 fixed;
+    background-size: cover;
+}
+
+#banner div {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+#cButton{
+    display: inline;
+    padding: 15px 30px;
+    border: solid 1px white;
+    text-decoration: none;
+    color: white;
+    
+} 
+#cButton:hover{
+    background: rgba(192,192,192,0.3);
+}
+
+
+
+
+
+/*Introduction Section */
+
+#intro {
+    width: 100%;
+    height: 600px;
+    /*display: inline-block;*/
+    background-color: white;
+    overflow: auto;
+    
+}
+#intro > div {
+    padding-top:  7%;
+    padding-left: 20%;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    
+    
+}
+#rightcol{
+    /*display: inline-block;
+    margin-left: 20%;*/
+    width: 20%;
+    padding: 10px;
+    padding-right: 20%;
+}
+#leftcol{
+    /*float: right;
+    margin-right: 20%;*/
+    width: 400px;    
+}
+
+
+
+/** Projects Section **/
+#projects {
+    width: 100%;
+    height: 800px;
+    /*display: inline-block;*/
+    background-color: #f6f6f6;
+    position: relative;
+}
+
+#projects h2 {
+    text-align: center;
+    padding-top: 5%;
+    
+}
+#projects h3 {
+    text-align: center;
+    margin-top: 5%;
+}
+
+#projectplane {
+    /*width: 100%;
+    display: inline-block;*/
+}
+ #proj_rightcol{
+    display: inline-block;
+    width: 49% 
+    
+}
+#proj_leftcol{
+    display: inline-block;
+    width: 49%
+    
+}
+#projects img{
+    /*height: 200px;*/
+    /*width: 60%;*/
+    height: 30%;
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 4px;
+}
+
+#projects p {
+    text-align: center;
+    margin: 0 auto;
+    color: #666;
+    width: 500px;
+    
+}
+    
+
+/** Parrlax picture **/
+
+#parra{
+    width: 100%;
+    height: 300px;
+}
+
+/** Footer **/
+
+#footer {
+    height: 400px;
+}
+
+#footnote {
+    margin-top: 7%;
+    text-align: center;
+}
+#footnote p {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+
+#icons-sect{
+    position: relative;
+    text-align: center;
+}
+
+#icons {
+    list-style-type: none;
+    margin-top:  2%;
+    padding-right: 3%;
+}
+
+
+#icons li {
+    display: inline-block;
+    padding: 9px;
+}
+
+#icons li img {
+    height: 60px;
+    width: 60px;
+}
+
+
+#linebar {
+    width: 80%;
+    margin: 5% auto;
+    display: block;
+    background-color: silver;
+    height: 1px;
+    
+}
+
+#copyright {
+    list-style-type: none;
+    text-align: center;
+}
+
+
+#copyright li:nth-child(3){
+    margin-left: 10%;
+}
+
+#copyright li {
+    display: inline-block;
+}
+
+
+/* Media Quaries */
+
+@media screen and (max-width: 1450px){
+    #banner {
+        height: 600px;
+    }
+    #projects img{
+        width: 400px;
+        height: 155px;
+    }
+    
+    #projects p {
+        width: 400px;
+    } 
+}
+
+@media screen and (max-width: 1220px){
+    
+    
+}
+
+@media screen and (max-width: 935px){
+    
+    #intro {
+    width: 100%;
+    height: auto;
+    padding-bottom: 5%;
+    /*display: inline-block;*/
+    background-color: white;
+    overflow: auto;
+    
+    }
+    
+    
+    
+    #projects {
+    width: 100%;
+    height: auto;
+    padding-bottom: 7%;
+    }
+
+
+    #proj_rightcol{
+        display: inline-block;
+        padding-bottom: 5%;
+        width: inherit;
+    }
+    
+    #proj_leftcol{
+    display: inline-block;
+    width: inherit;
+    }
+    #projects img{
+    /*height: 200px;*/
+    width: 70%;
+    height: 20%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 4px;
+    }
+
+    #projects p {
+    width: 70%;
+    
+    }
+    
+    #rightcol {
+    /*display: inline-block;
+    margin-left: 20%;*/
+    width: 20%;
+    padding: 10px;
+    padding-right: 15%;
+    }
+    #leftcol{
+    /*float: right;
+    margin-right: 20%;*/
+    width: 50%;    
+    }
+    
+}
+
+
+/*tablet 768*/
+
+@media screen and (max-width: 768px){
+    
+    /* menu */
+    
+    body{
+        overflow-x: hidden;
+    }
+    
+   
+    #banner {
+        margin-top: -20px;
+    }
+    
+    .bmenu {
+        display: block;
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        background-image: url("/images/burger.png");
+        background-size: contain;
+        border-radius: 8px;
+        left: 260px;
+        z-index: 1000;
+        cursor: pointer;
+        
+    }
+    
+    nav h2{
+        display: none;
+    }
+    
+    nav{
+        width: 250px;/*30%*/
+        height: 100%;
+        overflow: visible;
+        background-color: #192024;
+        transform: translate3d(-252px, 0, 0);
+        transition: transform 0.4s ease;
+    }
+    
+
+     .wrapper {
+        transition: transform 0.4s ease;
+    }
+    
+    .active-nav .wrapper{
+        transform: translate3d(250px, 0, 0);
+        transition: transform 0.4s ease;
+        
+    }
+    
+    .active-nav nav {
+        transform: translate3d(0, 0, 0);
+        
+        
+    }
+    
+    .activated-nav {
+        
+    }
+    
+    
+    
+    nav ul{
+        display: inline;
+        float: none;
+    }
+    
+    nav li {
+        display: inline;
+        
+    }
+    
+    nav ul li a {
+        display: block;
+        text-align: left;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 15px;
+        color: #fff;
+        border-bottom: 1px solid rgba(192,192,192,0.2);
+        text-transform: capitalize;
+    }
+    
+    #intro > div {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    }
+    
+    #rightcol{
+    display: inline;
+    width: inherit;
+    }
+    #leftcol{
+    display: inline-block;
+    width: 90%;
+    }
+    
+}
+
+/*phone*/
+
+@media screen and (max-width: 480px){
+    
+}
+/*
+
+ 
+   
+
+*/
+
+
+
+
+
+
+
+
+  /*.homepg li a:hover{
+    color: rgba(255,255,255,1);
+  }*/
+/*
+  #menu .active a
+  {
+  background: #2651a8;
+  border-radius: 6px;
+  color: rgba(255,255,255,1);
+  }
+*/
+
+  /**Splash screen**/
+/**
+  #header-wrapper
+	{
+		position: relative;
+		padding: 5em 0em 7em 0em;
+		background: #111111 url(images/pic02.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+	#header
+	{
+		position: relative;
+		padding: 5em 0em;
+		background-color: transparent;
+			border: 0;
+			box-shadow: none;
+			height: 3.25em;
+			line-height: 3.25em;
+
+	} **/
