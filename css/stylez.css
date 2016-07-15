@@ -17,6 +17,7 @@ body {
 
 .wrapper {
     width: 100%;
+    height: 100%;
 }
 
 body, input, select, textarea {
@@ -28,7 +29,7 @@ body, input, select, textarea {
 	}
 
 	a {
-		color: #f32853;
+		color: darkseagreen;
 		text-decoration: underline;
 	}
 
@@ -151,7 +152,7 @@ nav a {
 .picpanel {
     width: 100%;
     z-index: 1;
-    background: url("/images/photo1.jpg") no-repeat 0 0 fixed;
+    background: url("/images/photo3.jpg") no-repeat 0 0 fixed;
     background-size: cover;
 }
 
@@ -244,15 +245,18 @@ nav a {
     width: 49%
     
 }
-#projects img{
+#projects .thumbs{
     /*height: 200px;*/
     /*width: 60%;*/
-    height: 30%;
+    /*height: 30%;*/
     width: 500px;
     height: 200px;
     margin: 0 auto;
     display: block;
-    border-radius: 4px;
+    border-radius: 10px;
+    background: url("/images/ad2.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #projects p {
@@ -340,31 +344,40 @@ nav a {
     #banner {
         height: 600px;
     }
-    #projects img{
+    
+}
+
+@media screen and (max-width: 1220px){
+    
+    #projects .thumbs{
         width: 400px;
-        height: 155px;
+        height: 200px;
     }
     
     #projects p {
         width: 400px;
     } 
-}
-
-@media screen and (max-width: 1220px){
     
     
 }
 
 @media screen and (max-width: 935px){
     
+    
+    
+    
     #intro {
-    width: 100%;
+    width: 90%;
     height: auto;
     padding-bottom: 5%;
     /*display: inline-block;*/
     background-color: white;
-    overflow: auto;
+    /*overflow: auto;*/
     
+    }
+    
+    .picpanel {
+        background-attachment: scroll;
     }
     
     
@@ -386,14 +399,13 @@ nav a {
     display: inline-block;
     width: inherit;
     }
-    #projects img{
-    /*height: 200px;*/
-    width: 70%;
-    height: 20%;
-    margin: 0 auto;
-    display: block;
-    border-radius: 4px;
+    
+    #projects .thumbs{
+        width: 70%;
+        height: 20%;
+        
     }
+    
 
     #projects p {
     width: 70%;
@@ -413,22 +425,47 @@ nav a {
     width: 50%;    
     }
     
+    #copyright{
+        text-align: inherit;
+        margin-left: 25px;
+    }
+    
+    #copyright li{
+        display: inline;
+    }
+    
+    #copyright li:nth-child(3){
+        
+        margin-left: 0px;
+    }
+
+    
 }
 
 
 /*tablet 768*/
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 773px){
     
     /* menu */
     
-    body{
+    body, input, select, textarea {
+        font-size: 12pt;   
+    }
+    
+    html, body {
         overflow-x: hidden;
     }
+    
+   /* .wrapper{
+        overflow-x: hidden;
+    }*/
     
    
     #banner {
         margin-top: -20px;
+        height: 450px;
+        
     }
     
     .bmenu {
@@ -455,17 +492,19 @@ nav a {
         overflow: visible;
         background-color: #192024;
         transform: translate3d(-252px, 0, 0);
-        transition: transform 0.4s ease;
+        
     }
     
 
      .wrapper {
         transition: transform 0.4s ease;
+        
     }
     
     .active-nav .wrapper{
         transform: translate3d(250px, 0, 0);
-        transition: transform 0.4s ease;
+        /*position: fixed;*/
+      
         
     }
     
@@ -475,8 +514,8 @@ nav a {
         
     }
     
-    .activated-nav {
-        
+    .activated-nav nav {
+        transition: transform 0.4s ease;
     }
     
     
@@ -517,12 +556,99 @@ nav a {
     width: 90%;
     }
     
+    
+    #projects .thumbs{
+        height: 250px;
+        width: 550px;
+    }
+    
+    #parra {
+        height: 200px;
+    }
+    
+    
+    
 }
 
-/*phone*/
-
-@media screen and (max-width: 480px){
+@media screen and (max-width: 680px) {
     
+    #banner {
+        height: 400px;
+        
+    }
+    
+    #projects p {
+    width: 80%;
+    
+    }
+    
+}
+
+/*phone 480px*/
+
+@media screen and (max-width: 560px){
+    
+    
+    
+    
+    #leftcol{
+        width: auto;
+        padding-right: 50px;
+        
+    }
+    
+    #projects .thumbs{
+        height: 150px;
+        width: 350px;
+    
+    }
+
+    
+    #projects {
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+    
+    #proj_leftcol{
+        padding-top: 20px;   
+    }
+    
+    #icons li img {
+    height: 45px;
+    width: 45px;
+    padding-right: 13px;
+}
+    
+    #copyright{
+        text-align: inherit;
+        margin-left: 0px;
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 380px){
+    
+
+        #icons li img {
+            height: 40px;
+            width: 40px;
+            padding-right: 23px;
+        }
+    
+        #icons li {
+            padding: 0px;
+        }
+    
+    
+        #parra {
+            height: 125px;
+        }
+        
+        #projects .thumbs{
+            width: 300px;
+        }
+
 }
 /*
 
