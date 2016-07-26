@@ -254,7 +254,7 @@ nav a {
     margin: 0 auto;
     display: block;
     border-radius: 10px;
-    background: url("/images/ad2.jpg") no-repeat;
+    background: url("/images/prog2.jpg") no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -364,8 +364,9 @@ nav a {
 @media screen and (max-width: 935px){
     
     
+        
     
-    
+   
     #intro {
     width: 90%;
     height: auto;
