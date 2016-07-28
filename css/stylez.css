@@ -88,6 +88,9 @@ body, input, select, textarea {
 		/*line-height: 1.5em;*/
 	}
 
+/* --------------------------- HOOOMMMMEEEEE PAAGGEEEE ------------------------ */
+
+
 /**Navigation Bar**/
 
 /**On homepage **/
@@ -651,6 +654,25 @@ nav a {
         }
 
 }
+
+
+/* -------------------------- RESUME PAGE ---------------------------------- */
+
+
+#mainpdf{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    
+    
+}
+
+
+
+
 /*
 
  
