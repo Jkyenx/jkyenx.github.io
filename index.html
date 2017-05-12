@@ -5,35 +5,84 @@
             <title> Jovin Kyenkungu </title>
         <meta name="keywords" content="" />
         <meta name="description" content="" />
-        <link href="/style.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="style.css" rel="stylesheet" type="text/css" media="all" />
         <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <!--script src="http://code.jquery.com/jquery-1.11.3.min.js"-->
         <script src="js/main.js" type="text/javascript"></script>
     </head>
-    
+
     <body>
-    
-        <section id="home">
-            <div id="logo"></div>
-        <!--    <svg id="Logo" width="200px" height="200px" viewBox="0 0 311.4 317.5" >
-                 <filter id="blur-filter">
-                    <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
-                        <feMerge>
-                            <feMergeNode in="coloredBlur"/>
-                            <feMergeNode in="SourceGraphic"/>
-                        </feMerge>
-                </filter>
-  <circle id="Back" stroke="#000000" stroke-miterlimit="10" cx="153" cy="161.1" r="153"/>
-  <path id="J-path" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M63 175.6l36 36 17.1 19 0.4-74 0.5-125h26.5c0 224.5 0 199.4 0 198 0 8.5-17.8 35.8-26.8 35.8s-62.9-63.1-62.9-63.1L27 175.6H63z"/>
-  <path id="K-path" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M270 175.1l-36 36.1 27 35.9 -18 18 -27-36c0 0-27.3 36-36.3 36s-27.3-27-27.3-35.5c0 4.5 0 8.5 0-198H180l0.5 125 0.4 74 17.1-19.1 36-35.8L270 175.1"/>
-</svg> -->
+
+        <section class="maincontent" id="home">
+              <div class="logoanimate" id="logo"></div>
+
+              <nav class="links linksanimation" id="links">
+                <a href="#bio" class="link" id="About">About</a><span>/</span>
+                <a href="#project" class="link" id="Projects">Projects</a><span>/</span>
+                <a href="#resume" class="link" id="Resume">Resume</a><span>/</span>
+                <a href="#Contact" class="link" id="Contact">Contact</a>
+              </nav>
         </section>
-    
-    
-    
+        <section class="maincontent" id="aboutpage">
+          <h2>About</h2>
+          <p>Hi, My name is <span class="goldy">Jovin Kyenkungu.</span> I am a fullstack web and android developer currently completing my Computer Science
+            degree at the University of Toronto. As a fullstack developer, I am well versed in <span class="goldy">SQL, NoSQL, JS and React</span> and whilst my
+            preference to develop for android arises from my love of <span class="goldy">Java</span>, the broad school curriculum has trained to be comfortabled with
+            <span class="goldy">C and Haskell</span>. In addition to being a full-time student, I spend my spare time discovering new implementation techniques and languages
+          </p>
+        </section>
+        <section class="maincontent" id="projectpage">
+          <h2>Projects</h2>
+          <div id="cf" class="projbox">
+            <div id="cfimg"></div>
+            <div id="cfinfo" class="rightinfo insidebox">
+              <h3>Course Flex</h3>
+              <p>For the semster long project required by CSC309: Developing On The Web, I and three other computer science students decided to develop a more
+                interactive and intuitive school course searching website. Course Flex's goal was to provide a user-friendly website for students to find course with ease and
+                student provided information. Implementing Node and MongoDB for our Backend...currently hosted at: <a href="https://strawberry-cupcake-85655.herokuapp.com/">Course Flex</a></p>
+            </div>
+          </div>
+          <div id="amani" class="projbox">
+            <div id="amaniimg" class="rightinfo"></div>
+            <div id="amaniinfo" class="insidebox">
+              <h3>Amani</h3>
+              <p>Amani is a start-up that focuses on finacial and regualtion technologies mainly working with blockchain orientated applications. As Lead Backend Developer, I am tasked
+              with securing connection with databases and the blockchain chain, much of which requires STRATO and Haskell. In December 2016, we participated in the first regulation hackaton
+              held in Canada (RegHackTO)...</p>
+            </div>
+          </div>
+          <div id="wh" class="projbox">
+            <div id="whimg"></div>
+            <div id="whinfo" class="rightinfo insidebox">
+              <h3>WearHacks</h3>
+              <p>.</p>
+            </div>
+          </div>
+          <div id="se" class="projbox">
+            <div id="seimg" class="rightinfo">SEImage</div>
+            <div id="seinfo" class="insidebox">
+              <h3>StallionEye</h3>
+              <p>.</p>
+            </div>
+          </div>
+        </section>
+        <section class="maincontent" id='resumepage'>
+          <iframe src="https://drive.google.com/file/d/0B3B-t3nFbY5ZU3FLNXN4Qk1EVEk/preview" width="840" height="630"></iframe>
+        </section>
+        <section class="maincontent" id='contactpage'>
+          <h2>Thank You For Visiting<span class="goldy">.</span></h2>
+          <div class="contantlinks">
+          <a href="#"><img src="githubnail1.png" alt="" width="80" height="80"></a>
+          <a href="https://ca.linkedin.com/in/jovin-kyenkungu-64112a124"><img src="linkin3nail.png" alt="" width="80" height="80"></a>
+          <a href="mailto:jovin.kyenx@gmail.com?Subject=Hello%20FromWebsite"></a><img src="email.png" id="emailpic" alt="" width="80">
+          </div>
+        </section>
+
+
     </body>
-    
-    
-    
+
+
+
 </html>
