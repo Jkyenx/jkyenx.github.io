@@ -55,6 +55,7 @@ body, input, select, textarea {
 	h2 {
 		font-size: 2.75em;
 		/*line-height: 1.5em;*/
+
 	}
 
 	h3 {
@@ -91,7 +92,7 @@ body, input, select, textarea {
 	position:absolute;
 	left:50%;
 	top:50%;
-	margin:-100px 0 0 -100px;
+	margin:-120px 0 0 -120px;
   /*background: #fff;*/
   display: inline;
 }
@@ -203,6 +204,11 @@ body, input, select, textarea {
   color: #fff;
 }
 
+#home {
+  /*display: none;*/
+  /*border: dotted red;*/
+}
+
 #aboutpage {
   font-size: 15pt;
   margin:-200px 0 0 -250px;
@@ -219,6 +225,8 @@ body, input, select, textarea {
 
 #projectpage h2 {
   padding-bottom: 100px;
+  color: black;
+  -webkit-text-stroke: 0.01pt #e1aa27;
 }
 
 .rightinfo {
@@ -229,15 +237,17 @@ body, input, select, textarea {
   height: 250px;
   /*border: dotted white;*/
   margin-bottom: 40px;
+  padding-top: 60px;
 }
 
 .insidebox {
   width: 600px;
   height: inherit;
+  border-bottom: thin solid #e1aa27;
 }
 
 #cf{
-
+  padding-top: 0px;
 }
 
 #cfimg{
@@ -249,9 +259,9 @@ body, input, select, textarea {
   position: absolute;
 }
 
-
 #amani {
   clear: both;
+
 }
 
 #amaniimg {
@@ -291,12 +301,592 @@ body, input, select, textarea {
 
 #contactpage {
   display: none;
+  margin: -150px 0 0 -200px;
 }
 
 #emailpic {
   padding-top: 5px;
-  padding-left: 15px;
+  padding-right: 5px;
+  margin-left: 5px;
+
 }
+
+.mobileR{
+  display: none;
+}
+
+.mobileL{
+  display: none;
+}
+
+#projectpage a {
+  border: 2px solid #e1aa27;
+  margin: 10px 0 60px;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  transition: all .3s ease-in-out;
+}
+
+#projectpage a:hover {
+  color: #2A3A3F;
+  background-color: #e1aa27;
+  padding: 0.5rem 1.5rem;
+}
+
+#projectpage h2 {
+  /*margin-left: 40%;*/
+}
+
+.button1 {
+  border: 2px solid #e1aa27;
+  margin: 250px 0 0 350px;
+  padding: 0.8rem 1.2rem;
+  padding-right: 0rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  transition: all .3s ease-in-out;
+  width: 25%;
+}
+
+.button1:hover {
+  color: #2A3A3F;
+  background-color: #e1aa27;
+  padding-left: 1.3rem;
+}
+
+#resumepdf {
+  display: none;
+}
+
+.contactlinks a:hover{
+  border-bottom: solid #e1aa27;
+
+}
+
+#bottomnav {
+  right: 0px;
+  position: fixed;
+  top: 45%;
+  display: none;
+}
+
+#navbut {
+  background: url("p1.png") no-repeat;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+}
+
+/** Media Queries!!!!! **/
+
+@media only screen and (max-width: 1280px) {
+
+  /*.maincontent {
+    margin:-120px 0 0 -120px;
+  }*/
+
+  #home {
+    width: 60%;
+    /*border: dotted white;*/
+  }
+
+/******* PROJECT PAGE **********/
+  #projectpage {
+    /*margin -200px 00 -350px for halfscreen*/
+    margin:-350px 0 0 -340px;
+    /*background: grey;*/
+    width: 680px;
+    /*display: none;*/
+  }
+
+  #cfinfo {
+    float: right;
+  }
+
+  #amaniimg{
+    margin-right: 0px;
+  }
+  /*#amaniinfo {
+    width: 400px;
+  }*/
+  #amani {
+    padding-top: 100px;
+  }
+  #wh{
+    padding-top: 80px;
+  }
+
+  #whinfo {
+    float: right;
+  }
+
+  .insidebox {
+    width: 400px;
+    height: 350px;
+  }
+
+  #resumepage {
+    margin:-300px 0 0 -420px;
+  }
+
+
+
+
+
+}
+
+@media only screen and (max-width: 860px) {
+
+  /*Resume page*/
+  #resumepic {
+    display: none;
+  }
+  #resumepdf {
+    display: inherit;
+  }
+
+
+
+}
+
+@media only screen and (max-width: 770px) {
+
+  /*.maincontent {
+    margin:-120px 0 0 -120px;
+  }*/
+
+}
+
+@media only screen and (max-width: 750px) {
+
+
+  /******* PROJECT PAGE **********/
+  #projectpage {
+    /*margin -200px 00 -350px for halfscreen*/
+    margin:-350px 0 0 -45%;
+    /*background: grey;*/
+    width: 90%;
+    /*border: dotted white;*/
+    /*display: none;*/
+  }
+  #cf {
+    clear: both;
+  }
+  #cfimg{
+    float: none;
+    position: relative;
+    clear: left;
+    display: inline-block;
+
+  }
+
+  #cfinfo {
+    float: left;
+    width: 90%;
+    padding-top: 30px;
+    padding-left: 15px;
+    border-bottom: thin solid #e1aa27;
+  }
+  .insidebox {
+    height: 270px;
+  }
+  .insidebox h3 {
+    display: none;
+  }
+  .mobileR {
+    float: right;
+    margin-right: 15%;
+    font-size: 70px;
+    width: 40%;
+    display: inherit;
+  }
+
+  .mobileL {
+    margin-left: 2%;
+    font-size: 70px;
+    width: 40%;
+    display: inherit;
+  }
+  #amani{
+    width: 90%;
+    margin-bottom: 250px;
+  }
+  #amaniimg{
+    position: relative;
+  }
+  #amaniinfo{
+    clear: right;
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 15px;
+  }
+
+  #wearmobile{
+    display: inline;
+    /*width: 40%;
+    height: auto;
+    border: dotted yellow;*/
+  }
+  #wh {
+
+  }
+  #whimg{
+    position: relative;
+    clear: left;
+    margin-left: 10px;
+    display: inline-block;
+
+  }
+
+  #whinfo {
+    float: left;
+    width: 90%;
+    padding-top: 30px;
+    padding-left: 10px;
+    border-bottom: thin solid #e1aa27;
+  }
+
+  #se{
+    width: 90%;
+    margin-bottom: 250px;
+  }
+  #seimg{
+    position: relative;
+  }
+  #seinfo{
+    clear: right;
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 15px;
+  }
+  #semobile{
+    font-size: 60px;
+  }
+
+
+
+
+
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+
+  #aboutpage {
+    /*border: dotted yellow;*/
+    margin: -200px 0 0 -25%;
+    /*width: 75%;*/
+    width: 70%;
+      /*background-color: pink;*/
+  }
+  #aboutpage p {
+    width: 100%;
+
+  }
+
+
+    /******* PROJECT PAGE **********/
+    #projectpage{
+      /*border: dotted yellow;*/
+    }
+
+    .mobileR {
+      display: none;
+    }
+    #wearmobile{
+      display: none;
+    }
+    .mobileL {
+      display: none;
+    }
+
+    .insidebox h3 {
+      display: inherit;
+    }
+    .insidebox{
+      height: 300px;
+    }
+
+    .mbright2{
+      float: none;
+      margin-left: 30%;
+    }
+
+    .mbright{
+      margin-left: 30%;
+    }
+    .mbright1{
+      margin-left: 40%;
+    }
+    #cfimg{
+      margin-left: 25%;
+    }
+    #whimg {
+      margin-left: 25%;
+    }
+    #setitle {
+      margin-left: 30%;
+    }
+
+
+
+
+
+}
+/* HEIGHT CSS !!!!!!!!!!!!!!!!!!!!!!!!!!! *************/
+
+@media only screen and (max-height: 420px) {
+  /*.maincontent {
+    margin: -200px 0 0 200px;
+  }*/
+
+
+  #aboutpage {
+    margin-top: -170px;
+  }
+}
+@media only screen and (max-height: 376px) {
+  /*.maincontent {
+    margin: -200px 0 0 200px;
+  }*/
+  #aboutpage {
+    margin-top: -150px;
+  }
+}
+@media only screen and (max-height: 320px) {
+  /*.maincontent {
+    margin: -200px 0 0 200px;
+  }*/
+  /*#aboutpage {
+    margin: -130px 0 0 -40%;
+    width: 90%;
+  }*/
+}
+
+/*End ***********/
+
+@media only screen and (max-width: 480px) {
+
+  .maincontent {
+    margin:-120px 0 0 -120px;
+  }
+  #logo{
+    margin-left: 22px;
+  }
+
+  #home {
+    width: auto;
+
+  }
+  .links {
+    /*border: dotted white;*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    margin-left: -26%;
+    background-color: black;
+    z-index: 1;
+  }
+  #aboutpage {
+    margin-top: -280px;
+    margin-left: -130px;
+    /*width: auto;*/
+
+  }
+  #aboutpage p {
+    font-size: 13pt;
+  }
+
+  /******* PROJECT PAGE **********/
+  #projectpage{
+    /*border: dotted red;*/
+    margin:-330px 0 0 -45%;
+  }
+
+  #projectpage h2 {
+    margin-left: 19%;
+  }
+
+  #cf {
+    margin-top: -20%;
+  }
+
+  .mbright2{
+    margin-left: 23%;
+  }
+
+  .mbright{
+    margin-left: 25%;
+  }
+  .mbright1{
+    margin-left: 35%;
+  }
+  #cfimg{
+    margin-left: 20%;
+  }
+  #whimg {
+    margin-left: 20%;
+  }
+  #setitle {
+    margin-left: 25%;
+  }
+
+  .insidebox {
+    height: 400px;
+  }
+
+  #amani {
+    margin-bottom: 380px;
+  }
+
+  /*resume page*/
+  .button1 {
+    margin: 250px 0 0 340px;
+  }
+
+  /*contact page*/
+  #contactpage{
+    font-size: 9pt;
+    width: 90%;
+    margin: -150px 0 0 -130px;
+  }
+
+  #giticon, #linkicon {
+    width: 60;
+    height: 60;
+  }
+
+  #emailpic {
+    width: 60;
+  }
+
+
+
+
+}
+
+@media only screen and (max-width: 380px) {
+
+  #aboutpage{
+    margin-left: -130px;
+    /*font-size: 12pt;*/
+  }
+
+  #aboutpage p {
+    /*font-size: 12pt;*/
+  }
+
+  /******* PROJECT PAGE **********/
+  #projectpage{
+    /*border: dotted purple;*/
+    margin:-280px 0 0 -45%;
+  }
+
+  #projectpage h2 {
+    margin-left: 15%;
+  }
+
+  .mbright2{
+    margin-left: 20%;
+  }
+
+  .mbright{
+    margin-left: 20%;
+  }
+  .mbright1{
+    margin-left: 35%;
+  }
+  #cfimg{
+    margin-left: 15%;
+  }
+  #whimg {
+    margin-left: 18%;
+  }
+  #wh{
+    padding-top: 150px;
+  }
+  #whmobile{
+    margin-left: 25%;
+  }
+  #setitle {
+    margin-left: 20%;
+  }
+
+  #amani {
+    margin-bottom: 320px;
+  }
+
+
+}
+
+/*  330px */
+@media only screen and (max-width: 330px) {
+
+  #aboutpage{
+    margin-top: -230px;
+    margin-left: -110px;
+    font-size: 10pt;
+    /*width: auto;*/
+  }
+
+  /******* PROJECT PAGE **********/
+  #projectpage{
+    /*border: dotted purple;*/
+    margin:-280px 0 0 -45%;
+  }
+
+  #projectpage h2 {
+    margin-left: 10%;
+    padding-top: 10%;
+  }
+
+  .mbright2{
+    margin-left: 15%;
+  }
+
+  .mbright{
+    margin-left: 15%;
+  }
+  .mbright1{
+    margin-left: 30%;
+  }
+  #cfimg{
+    margin-left: 10%;
+  }
+  #whimg {
+    margin-left: 14%;
+  }
+  #wh{
+    padding-top: 150px;
+  }
+  #setitle {
+    margin-left: 15%;
+  }
+  #whmobile{
+    margin-left: 20%;
+  }
+  .insidebox {
+    padding-bottom: 20px;
+  }
+
+  #contactpage {
+    font-size: 8pt;
+  }
+
+
+
+
+}
+
 
 
 /*
