@@ -227,6 +227,7 @@ body, input, select, textarea {
   padding-bottom: 100px;
   color: black;
   -webkit-text-stroke: 0.01pt #e1aa27;
+  visibility: hidden;
 }
 
 .rightinfo {
@@ -344,7 +345,7 @@ body, input, select, textarea {
 .button1 {
   border: 2px solid #e1aa27;
   margin: 250px 0 0 350px;
-  padding: 0.8rem 1.2rem;
+  padding: 0.8rem 1.3rem;
   padding-right: 0rem;
   border-radius: 50px;
   font-size: 0.9rem;
@@ -371,17 +372,55 @@ body, input, select, textarea {
 }
 
 #bottomnav {
-  right: 0px;
+  right: -12%;
   position: fixed;
-  top: 45%;
+  top: -35px;
   display: none;
+  width: 17%;
+  z-index: 1;
+  background-color: #e1aa27;
+  height: 75px;
+  border-radius: 50%;
+  border: 1px solid #666;
+  /*width: 100%;
+  height: 15%;
+  background-color: #e1aa27;
+  position: fixed;*/
+  overflow: hidden;
 }
 
 #navbut {
-  background: url("p1.png") no-repeat;
-  background-size: cover;
-  height: 50px;
-  width: 50px;
+  background: url("brg1.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 25px;
+  width: 25px;
+  /*padding: 2 2 2 2;
+  box-shadow: 3 3 3 5 #fff;
+  margin-left: -45px;
+  right: 20px;*/
+  /*margin-top: 40px;
+  margin-left: 5px;*/
+  /*display: none;*/
+  /*display: inline-block;*/
+  display: inline-block;
+  vertical-align: middle;
+}
+#links2 {
+  display: inline-block;
+  /*border: solid black;*/
+  /*margin-right: -110px;*/
+  margin-top: 40px;
+  margin-left: 5px;
+
+}
+
+#bottomnav a {
+  color: black;
+  display: inline-block;
+  /*margin-top: -1*/
+  padding-left: 29px;
+  visibility: hidden;
 }
 
 /** Media Queries!!!!! **/
@@ -442,6 +481,8 @@ body, input, select, textarea {
 
 }
 
+
+
 @media only screen and (max-width: 860px) {
 
   /*Resume page*/
@@ -463,10 +504,15 @@ body, input, select, textarea {
   }*/
 
 }
+/*Horizontal iPhone */
+
 
 @media only screen and (max-width: 750px) {
 
 
+  #links {
+      display: none;
+  }
   /******* PROJECT PAGE **********/
   #projectpage {
     /*margin -200px 00 -350px for halfscreen*/
@@ -570,6 +616,10 @@ body, input, select, textarea {
     font-size: 60px;
   }
 
+  #bottomnav {
+    display: inherit;
+  }
+
 
 
 
@@ -642,6 +692,10 @@ body, input, select, textarea {
 
 
 }
+
+
+
+
 /* HEIGHT CSS !!!!!!!!!!!!!!!!!!!!!!!!!!! *************/
 
 @media only screen and (max-height: 420px) {
@@ -671,6 +725,27 @@ body, input, select, textarea {
     width: 90%;
   }*/
 }
+@media only screen
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+      #aboutpage{
+          margin-left: -200px;
+      }
+
+      #bottomnav {
+        right: -10px;
+      }
+
+      #bottomnav a {
+        padding-left: 1px;
+      }
+      /*#contactpage {
+        margin-top: -20%;
+      }*/
+
+}
+
 
 /*End ***********/
 
@@ -698,8 +773,9 @@ body, input, select, textarea {
   }
   #aboutpage {
     margin-top: -280px;
-    margin-left: -130px;
+    margin-left: -140px;
     /*width: auto;*/
+    /*border: dotted red;*/
 
   }
   #aboutpage p {
@@ -756,7 +832,7 @@ body, input, select, textarea {
   /*contact page*/
   #contactpage{
     font-size: 9pt;
-    width: 90%;
+    width: 80%;
     margin: -150px 0 0 -130px;
   }
 
@@ -769,16 +845,65 @@ body, input, select, textarea {
     width: 60;
   }
 
+  #bottomnav {
+    right: -33px;
+  }
+
+  #bottomnav a {
+    padding-left: 23px;
+  }
+
 
 
 
 }
+
+@media only screen
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+      #resumepage{
+          margin:-280px 0 0 -430px;
+        }
+
+      #bottomnav {
+        right: -80px;
+      }
+      #links2 {
+
+      }
+      #bottomnav a {
+        padding-left: 87px;
+      }
+  }
+
+/*iphone6 hori*/
+@media only screen
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+      #resumepage{
+          margin:-280px 0 0 -430px;
+        }
+      #home {
+        /*margin: -150px 0 0 -130px;*/
+      }
+      #bottomnav {
+        right: -75px;
+      }
+      #bottomnav a {
+        padding-left: 65px;
+      }
+  }
+
+
 
 @media only screen and (max-width: 380px) {
 
   #aboutpage{
     margin-left: -130px;
     /*font-size: 12pt;*/
+    /*border: dotted purple;*/
   }
 
   #aboutpage p {
@@ -825,11 +950,27 @@ body, input, select, textarea {
     margin-bottom: 320px;
   }
 
+  #bottomnav {
+    right: -30px;
+  }
+
+  #bottomnav a {
+    padding-left: 15px;
+
+  }
+
 
 }
 
 /*  330px */
 @media only screen and (max-width: 330px) {
+
+  #home a {
+    font-size: 11pt;
+  }
+  #links{
+    padding-left: 40px;
+  }
 
   #aboutpage{
     margin-top: -230px;
@@ -882,7 +1023,13 @@ body, input, select, textarea {
     font-size: 8pt;
   }
 
-
+  #bottomnav {
+    right: -22px;
+    top: -38px;
+  }
+  #bottomnav a {
+    padding-left: 4px;
+  }
 
 
 }
