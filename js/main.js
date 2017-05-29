@@ -265,11 +265,13 @@ $(document).ready(function(){
 
   $(window).on('resize', function() {
        windowWidth = $(this).width();
+       if(tab !== ""){
         if(windowWidth <= 1280){
           $("#links").children().css("padding-right", "4%");
         } else if (windowWidth > 1280){
           $("#links").children().css("padding-right", "6%");
         }
+      }
         if (windowWidth < 740) {
             $("#links").css('display','none');
             $("#bottomnav").css('display','inherit');

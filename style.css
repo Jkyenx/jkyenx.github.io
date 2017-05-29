@@ -386,7 +386,7 @@ body, input, select, textarea {
   height: 15%;
   background-color: #e1aa27;
   position: fixed;*/
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 #navbut {
@@ -476,7 +476,7 @@ body, input, select, textarea {
     margin:-300px 0 0 -420px;
   }
 
-  
+
 
 
 
