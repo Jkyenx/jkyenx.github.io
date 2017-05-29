@@ -287,10 +287,14 @@ $(document).ready(function(){
     //   window.location.reload();
     // };
     function linkreset(){
-        document.getElementById("About").innerHTML = "About";
-        document.getElementById("Projects").innerHTML = "Projects";
-        document.getElementById("Resume").innerHTML = "Resume";
-        document.getElementById("Contact").innerHTML = "Contact";
+        $("#About").text("About");
+        $("#Projects").text("Projects");
+        $("#Resume").text("Resume");
+        $("#Contact").text("Contact");
+        // document.getElementById("About").innerHTML = "About";
+        // document.getElementById("Projects").innerHTML = "Projects";
+        // document.getElementById("Resume").innerHTML = "Resume";
+        // document.getElementById("Contact").innerHTML = "Contact";
     }
 });
 
