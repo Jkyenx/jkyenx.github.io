@@ -111,11 +111,14 @@ $(document).ready(function(){
           left: '45%',
           top: '13%'
         }, 800);
-        //if($(window).width() < 1400){
+        if($(window).width() > 1280){
         // $('#home').addClass('activated');
-        $('#links').children().animate({paddingRight: '5%'}, 800, function(){
+        $('#links').children().animate({paddingRight: '6%'}, 800, function(){
           //$('#links').css({position: 'fixed', backgroundColor: 'black', zIndex: '1'});
         });
+      } else {
+        $('#links').children().animate({paddingRight: '4%'}, 800);
+      }
       //} else {
         //$('#links').children().animate({paddingRight: '4%'}, 800, function(){
           //$('#links').css({position: 'fixed', backgroundColor: 'black', zIndex: '1'});
@@ -139,7 +142,9 @@ $(document).ready(function(){
   }
   }
 
-  $('#navbut').on('click', function(){
+
+
+  $('#bottomnav').on('click', function(){
       if(!active){
       prevright = $('#bottomnav').css('right');
       //alert(prevright);
@@ -188,7 +193,7 @@ $(document).ready(function(){
          //document.getElementById("Projects").innerHTML = 'Home';
          hometab = "Projects";
           });
-        } else if(tab !== '#aboutpage') {
+        } else if(tab !== '#projectpage') {
             $(tab).fadeOut(500);
             $('#bottomnav').animate({borderRadius: '50%', right: prevright, width: '17%'},function(){
               $('#bottomnav a').css('visibility', 'hidden');
@@ -260,10 +265,16 @@ $(document).ready(function(){
 
   $(window).on('resize', function() {
        windowWidth = $(this).width();
+        if(windowWidth <= 1280){
+          $("#links").children().css("padding-right", "4%");
+        } else if (windowWidth > 1280){
+          $("#links").children().css("padding-right", "6%");
+        }
         if (windowWidth < 740) {
             $("#links").css('display','none');
             $("#bottomnav").css('display','inherit');
-        } else {
+            linkreset();
+        } else if (windowWidth >= 740) {
             $("#links").removeClass('linksanimation').css({display: 'inherit', opacity: "1"});
             $("#bottomnav").css('display','none');
         }
@@ -273,7 +284,12 @@ $(document).ready(function(){
     //   $('#logo').removeClass('logoanimate').css('opacity','1');
     //   window.location.reload();
     // };
-
+    function linkreset(){
+        document.getElementById("About").innerHTML = "About";
+        document.getElementById("Projects").innerHTML = "Projects";
+        document.getElementById("Resume").innerHTML = "Resume";
+        document.getElementById("Contact").innerHTML = "Contact";
+    }
 });
 
 

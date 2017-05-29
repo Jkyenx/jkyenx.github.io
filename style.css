@@ -395,6 +395,7 @@ body, input, select, textarea {
   background-position: center;
   height: 25px;
   width: 25px;
+  /*border: solid black;*/
   /*padding: 2 2 2 2;
   box-shadow: 3 3 3 5 #fff;
   margin-left: -45px;
@@ -475,6 +476,7 @@ body, input, select, textarea {
     margin:-300px 0 0 -420px;
   }
 
+  
 
 
 
