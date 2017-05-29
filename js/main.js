@@ -164,7 +164,7 @@ $(document).ready(function(){
          $('#bottomnav').animate({borderRadius: '50%', right: prevright, width: '17%'},function(){
            $('#bottomnav a').css('visibility', 'hidden');
          });
-         document.getElementById("About").innerHTML = 'Home';
+         //document.getElementById("About").innerHTML = 'Home';
          hometab = "About";
           });
         } else if(tab !== '#aboutpage') {
@@ -173,7 +173,7 @@ $(document).ready(function(){
               $('#bottomnav a').css('visibility', 'hidden');
               $('#aboutpage').fadeIn();
             });
-            document.getElementById("About").innerHTML = 'Home';
+            //document.getElementById("About").innerHTML = 'Home';
             hometab = "About";
         }
         tab = '#aboutpage';
@@ -185,7 +185,7 @@ $(document).ready(function(){
          $('#bottomnav').animate({borderRadius: '50%', right: prevright, width: '17%'},function(){
            $('#bottomnav a').css('visibility', 'hidden');
          });
-         document.getElementById("Projects").innerHTML = 'Home';
+         //document.getElementById("Projects").innerHTML = 'Home';
          hometab = "Projects";
           });
         } else if(tab !== '#aboutpage') {
@@ -194,7 +194,7 @@ $(document).ready(function(){
               $('#bottomnav a').css('visibility', 'hidden');
               $('#projectpage').fadeIn();
             });
-            document.getElementById("Projects").innerHTML = 'Home';
+            //document.getElementById("Projects").innerHTML = 'Home';
             hometab = "Projects";
         }
         tab = '#projectpage';
@@ -206,7 +206,7 @@ $(document).ready(function(){
          $('#bottomnav').animate({borderRadius: '50%', right: prevright, width: '17%'},function(){
            $('#bottomnav a').css('visibility', 'hidden');
          });
-         document.getElementById("Resume").innerHTML = 'Home';
+         //document.getElementById("Resume").innerHTML = 'Home';
          hometab = "Resume";
           });
         } else if(tab !== '#resumepage') {
@@ -215,7 +215,7 @@ $(document).ready(function(){
               $('#bottomnav a').css('visibility', 'hidden');
               $('#resumepage').fadeIn();
             });
-            document.getElementById("Resume").innerHTML = 'Home';
+            //document.getElementById("Resume").innerHTML = 'Home';
             hometab = "Resume";
         }
         tab = '#resumepage';
@@ -227,7 +227,7 @@ $(document).ready(function(){
          $('#bottomnav').animate({borderRadius: '50%', right: prevright, width: '17%'},function(){
            $('#bottomnav a').css('visibility', 'hidden');
          });
-         document.getElementById("Contact").innerHTML = 'Home';
+         //document.getElementById("Contact").innerHTML = 'Home';
          hometab = "Contact";
           });
         } else if(tab !== '#contactpage') {
@@ -236,7 +236,7 @@ $(document).ready(function(){
               $('#bottomnav a').css('visibility', 'hidden');
               $('#contactpage').fadeIn();
             });
-            document.getElementById("Contact").innerHTML = 'Home';
+            //document.getElementById("Contact").innerHTML = 'Home';
             hometab = "Contact";
         }
         tab = '#contactpage';

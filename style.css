@@ -227,7 +227,7 @@ body, input, select, textarea {
   padding-bottom: 100px;
   color: black;
   -webkit-text-stroke: 0.01pt #e1aa27;
-  visibility: hidden;
+
 }
 
 .rightinfo {
@@ -521,6 +521,9 @@ body, input, select, textarea {
     width: 90%;
     /*border: dotted white;*/
     /*display: none;*/
+  }
+  #projectpage h2 {
+    visibility: hidden;
   }
   #cf {
     clear: both;
