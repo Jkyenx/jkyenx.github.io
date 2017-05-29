@@ -495,6 +495,9 @@ body, input, select, textarea {
     display: inherit;
   }
 
+  #links2 a {
+    padding-left: 20%;
+  }
 
 
 }
@@ -628,10 +631,8 @@ body, input, select, textarea {
 
 
 
-
-
-
 }
+
 
 @media only screen and (max-width: 600px) {
 
