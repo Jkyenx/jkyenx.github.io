@@ -280,6 +280,7 @@ $(document).ready(function(){
         if (windowWidth < 750) {
             $("#links").css('display','none');
             $("#bottomnav").css('display','inherit');
+            $('#bottomnav').attr('style','');
             linkreset();
         } else if (windowWidth > 750) {
             $('#home').css("opacity", "1");

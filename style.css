@@ -632,7 +632,11 @@ body, input, select, textarea {
 
 
 }
-
+@media only screen and (max-width: 660px) {
+  #bottomnav {
+    right: -11%;
+  }
+}
 
 @media only screen and (max-width: 600px) {
 
@@ -693,8 +697,9 @@ body, input, select, textarea {
       margin-left: 30%;
     }
 
-
-
+    #bottomnav {
+      right: -10%;
+    }
 
 
 }
