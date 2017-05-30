@@ -426,6 +426,7 @@ body, input, select, textarea {
 
 /** Media Queries!!!!! **/
 
+
 @media only screen and (max-width: 1280px) {
 
   /*.maincontent {
@@ -495,9 +496,9 @@ body, input, select, textarea {
     display: inherit;
   }
 
-  #links2 a {
-    padding-left: 20%;
-  }
+  /*#links2 a {
+    padding-left: 3%;
+  }*/
 
 
 }
@@ -510,7 +511,6 @@ body, input, select, textarea {
 
 }
 /*Horizontal iPhone */
-
 
 @media only screen and (max-width: 750px) {
 

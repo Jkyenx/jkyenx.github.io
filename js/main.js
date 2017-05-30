@@ -104,20 +104,25 @@ $(document).ready(function(){
   });
 
   function hidecont(callback){
-    if($(window).width() > 736) {
-    $('#logo').removeClass('logoanimate').css('opacity','1').fadeTo('slow',0).slideUp(
+    var tm = 50;
+    if($(window).width() < 750) {
+        $('#home').fadeTo('slow',0);
+      } else {
+        tm = 800;
+      }
+    $('#logo').removeClass('logoanimate').css('opacity','1').fadeTo((tm-400),0).slideUp(
       function(){
         $('#home').animate({
           left: '45%',
           top: '13%'
-        }, 800);
+        }, tm);
         if($(window).width() > 1280){
         // $('#home').addClass('activated');
-        $('#links').children().animate({paddingRight: '6%'}, 800, function(){
+        $('#links').children().animate({paddingRight: '6%'}, tm, function(){
           //$('#links').css({position: 'fixed', backgroundColor: 'black', zIndex: '1'});
         });
       } else {
-        $('#links').children().animate({paddingRight: '4%'}, 800);
+        $('#links').children().animate({paddingRight: '4%'}, tm);
       }
       //} else {
         //$('#links').children().animate({paddingRight: '4%'}, 800, function(){
@@ -126,20 +131,20 @@ $(document).ready(function(){
       //}
         callback();
     });
-  } else {
-    $('#home').css('opacity', '0').animate({
-      top: '100%'
-    },1, function(){
-        $('#logo').removeClass('logoanimate').css('opacity','1').fadeTo(1,0).slideUp(function(){
-          // $('#home').fadeTo('slow','1');
-          // $('#home').css('position','fixed');
-          $('#bottomnav').fadeIn('slow');
-          callback();
-        });
-
-
-    });
-  }
+  // else {
+  //   $('#home').css('opacity', '0').animate({
+  //     top: '13%',
+  //     left: '45%'
+  //   },1, function(){
+  //       $('#links').children().css({paddingRight: '4%'});
+  //       $('#logo').removeClass('logoanimate').css('opacity','1').fadeTo(1,0).slideUp(function(){
+  //
+  //         callback();
+  //       });
+  //
+  //
+  //   });
+  // }
   }
 
 
@@ -272,14 +277,16 @@ $(document).ready(function(){
           $("#links").children().css("padding-right", "6%");
         }
       }
-        if (windowWidth < 740) {
+        if (windowWidth < 750) {
             $("#links").css('display','none');
             $("#bottomnav").css('display','inherit');
             linkreset();
-        } else if (windowWidth >= 740) {
+        } else if (windowWidth > 750) {
+            $('#home').css("opacity", "1");
             $("#links").removeClass('linksanimation').css({display: 'inherit', opacity: "1"});
             $("#bottomnav").css('display','none');
         }
+
     });
 
     // window.onorientationchange = function() {
