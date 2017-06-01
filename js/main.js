@@ -290,6 +290,15 @@ $(document).ready(function(){
 
     });
 
+    $(window).on("orientationchange",function(){
+      if(active){
+        $('#bottomnav').attr('style','');
+        $('#bottomnav a').css('visibility', 'hidden');
+        active = false;
+      }
+
+  });
+
     // window.onorientationchange = function() {
     //   $('#logo').removeClass('logoanimate').css('opacity','1');
     //   window.location.reload();
