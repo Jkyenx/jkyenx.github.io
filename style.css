@@ -236,7 +236,8 @@ body, input, select, textarea {
 }
 
 .projbox {
-  height: 250px;
+  /*heigh was 250 */
+  height: 300px;
   /*border: dotted white;*/
   margin-bottom: 40px;
   padding-top: 60px;
@@ -450,6 +451,7 @@ body, input, select, textarea {
 
   #cfinfo {
     float: right;
+    padding-bottom: 10px;
   }
 
   #amaniimg{
@@ -471,7 +473,8 @@ body, input, select, textarea {
 
   .insidebox {
     width: 400px;
-    height: 350px;
+    /*height was 350*/
+    height: 380px;
   }
 
   #resumepage {
@@ -618,6 +621,8 @@ body, input, select, textarea {
   }
   #seimg{
     position: relative;
+    font-weight: 900;
+
   }
   #seinfo{
     clear: right;
@@ -678,7 +683,8 @@ body, input, select, textarea {
       display: inherit;
     }
     .insidebox{
-      height: 300px;
+      /*height was 300*/
+      height: 370px;
     }
 
     .mbright2{
@@ -814,7 +820,7 @@ body, input, select, textarea {
   }
 
   .insidebox {
-    height: 400px;
+    height: 430px;
   }
 
   #amani {
@@ -957,7 +963,7 @@ and (orientation:landscape){
 
 
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 394px) {
 
   #aboutpage{
     margin:-85% 0 0 -35%;
@@ -1004,6 +1010,12 @@ and (orientation:landscape){
   #setitle {
     margin-left: 20%;
   }
+  #cfinfo {
+    padding-bottom: 45px;
+  }
+  .insidebox {
+    padding-bottom: 30px;
+  }
 
   #amani {
     margin-bottom: 320px;
@@ -1023,7 +1035,7 @@ and (orientation:landscape){
 }
 
 /*  330px */
-@media only screen and (max-width: 330px) {
+@media only screen and (max-width: 337px) {
 
   #home a {
     font-size: 11pt;
@@ -1075,8 +1087,12 @@ and (orientation:landscape){
   #whmobile{
     margin-left: 20%;
   }
+  #cfinfo {
+    padding-bottom: 110px;
+  }
+
   .insidebox {
-    padding-bottom: 20px;
+    padding-bottom: 60px;
   }
 
   #contactpage {
