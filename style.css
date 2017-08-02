@@ -288,6 +288,14 @@ body, input, select, textarea {
 
 }
 
+#eye{
+  background: url("img/theMask.png") no-repeat;
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  clear: right;
+  position: absolute;
+}
 
 #resumepage {
   margin:-300px 0 0 -400px;
@@ -606,6 +614,13 @@ body, input, select, textarea {
     display: inline-block;
 
   }
+  #eye{
+    position: relative;
+    clear: left;
+    margin-left: 10px;
+    display: inline-block;
+
+  }
 
   #whinfo {
     float: left;
@@ -617,7 +632,7 @@ body, input, select, textarea {
 
   #se{
     width: 90%;
-    margin-bottom: 250px;
+    margin-bottom: 200px;
   }
   #seimg{
     position: relative;
@@ -703,6 +718,12 @@ body, input, select, textarea {
     }
     #whimg {
       margin-left: 25%;
+    }
+    #eye{
+      margin-left: 25%;
+    }
+    #se{
+      margin-bottom: 100px;
     }
     #setitle {
       margin-left: 30%;
@@ -814,6 +835,12 @@ body, input, select, textarea {
   }
   #whimg {
     margin-left: 20%;
+  }
+  #eye {
+    margin-left: 20%;
+  }
+  #se{
+    margin-bottom: 150px;
   }
   #setitle {
     margin-left: 25%;
@@ -1001,11 +1028,17 @@ and (orientation:landscape){
   #whimg {
     margin-left: 18%;
   }
+  #eye{
+    margin-left: 18%;
+  }
   #wh{
     padding-top: 150px;
   }
   #whmobile{
     margin-left: 25%;
+  }
+  #se{
+    margin-bottom: 100px;
   }
   #setitle {
     margin-left: 20%;
@@ -1076,6 +1109,9 @@ and (orientation:landscape){
     margin-left: 10%;
   }
   #whimg {
+    margin-left: 14%;
+  }
+  #eye {
     margin-left: 14%;
   }
   #wh{
