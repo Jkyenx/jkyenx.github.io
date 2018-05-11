@@ -253,13 +253,24 @@ body, input, select, textarea {
   padding-top: 0px;
 }
 
+#xsenimg{
+  background: url("img/xSensa.png") no-repeat;
+  background-size: contain;
+  height: 300px;
+  width: 420px;
+  clear: right;
+  margin-top: 5%;
+  position: absolute;
+}
+
 #cfimg{
   background: url("img/cfLogo.png") no-repeat;
   background-size: cover;
   height: 200px;
   width: 220px;
-  clear: right;
-  position: absolute;
+  margin-right: 80px;
+  /*clear: right;
+  position: absolute;*/
 }
 
 #amani {
@@ -279,7 +290,7 @@ body, input, select, textarea {
 }
 
 #whimg {
-  background: url("img/wear1.jpeg") no-repeat;
+  background: url("img/moon.png") no-repeat;
   background-size: cover;
   height: 200px;
   width: 200px;
@@ -462,7 +473,20 @@ body, input, select, textarea {
     padding-bottom: 10px;
   }
 
+  #xsenimg {
+    float: none;
+    position: relative;
+    clear: left;
+    display: inline-block;
+    margin-left: -5%;
+    width: 300px;
+  }
+
   #amaniimg{
+    margin-right: 0px;
+  }
+
+  #cfimg{
     margin-right: 0px;
   }
   /*#amaniinfo {
@@ -473,6 +497,9 @@ body, input, select, textarea {
   }
   #wh{
     padding-top: 80px;
+  }
+  #eyebox{
+   padding-top: 80px; 
   }
 
   #whinfo {
@@ -549,19 +576,23 @@ body, input, select, textarea {
   #cf {
     clear: both;
   }
-  #cfimg{
-    float: none;
+  #cfimg {
+    float: right;
     position: relative;
-    clear: left;
-    display: inline-block;
+    /*clear: left;
+    display: inline-block;*/
 
   }
+
+ 
 
   #cfinfo {
     float: left;
     width: 90%;
-    padding-top: 30px;
+    padding-top: 0px;
+    margin-top: -70px;
     padding-left: 15px;
+    padding-bottom: 30px;
     border-bottom: thin solid #e1aa27;
   }
   .insidebox {
@@ -605,7 +636,10 @@ body, input, select, textarea {
     border: dotted yellow;*/
   }
   #wh {
-
+    
+  }
+  #eyebox{
+    
   }
   #whimg{
     position: relative;
@@ -658,6 +692,11 @@ body, input, select, textarea {
 
 }
 @media only screen and (max-width: 660px) {
+  #xsenimg {
+    width: 200px;
+    margin-left: 0px;
+  }
+
   #bottomnav {
     right: -11%;
   }
@@ -714,10 +753,23 @@ body, input, select, textarea {
       margin-left: 40%;
     }
     #cfimg{
-      margin-left: 25%;
+      float: none;
+      margin-left: 28%;
+    }
+    #cfinfo {
+      margin-top: 0;
+      padding-bottom: 45px;
+    }
+    #xsenimg{
+      margin-left: 10%;
+      width: 75%;
+      margin-bottom: -200px;
     }
     #whimg {
       margin-left: 25%;
+    }
+    #eyebox{
+      padding-top: 300px;
     }
     #eye{
       margin-left: 25%;
@@ -1116,6 +1168,9 @@ and (orientation:landscape){
   }
   #wh{
     padding-top: 150px;
+  }
+  #eyebox{
+    padding-top: 350px;
   }
   #setitle {
     margin-left: 15%;
